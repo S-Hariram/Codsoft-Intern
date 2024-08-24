@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(33, 37, 41);
+    --accent-color: rgb(255, 87, 34);
+    --text-dark: #ffffff;
+    --white: #f8f9fa;
+    --max-width: 1200px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    background: linear-gradient(120deg, #000428, #004e92);
+    color: var(--text-dark);
+    overflow-x: hidden;
+}
+
+.container {
+    position: relative;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.nav__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav__links a {
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.nav__links a:hover {
+    color: var(--accent-color);
+}
+
+.letter-m {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40rem;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.1);
+    z-index: -1;
+}
+
+.container img {
+    position: absolute;
+    width: 100%;
+    max-width: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 5rem;
+    letter-spacing: 20px;
+    color: var(--white);
+}
+
+.text__left {
+    transform: translate(calc(-50% - 200px), -50%);
+}
+
+.text__right {
+    transform: translate(calc(-50% + 200px), -50%);
+}
+
+.btn {
+    position: absolute;
+    padding: 1rem 2rem;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--text-dark);
+    background-color: var(--accent-color);
+    transition: background-color 0.3s ease;
+}
+
+
+
+.container .explore {
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.container .brochure {
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.container .contact {
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+h5 {
+    position: absolute;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.feature-1 {
+    top: 30%;
+    left: 10%;
+    color: var(--white);
+}
+
+.feature-2 {
+    top: 30%;
+    right: 10%;
+    color: var(--accent-color);
+}
+
+.feature-3 {
+    bottom: 30%;
+    left: 10%;
+    color: var(--accent-color);
+}
+
+.feature-4 {
+    bottom: 30%;
+    right: 10%;
+    color: var(--white);
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer__links a {
+    color: var(--white);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer__links a:hover {
+    color: var(--accent-color);
+}
